@@ -372,91 +372,109 @@
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
       }
 
-      /* Responsive Typography */
-      @media (max-width: 768px) {
+ @media (max-width: 1024px) {
         .hero h1 {
-          font-size: 2.5em;
+          font-size: 3em;
         }
 
         .hero p {
           font-size: 1em;
         }
 
+        .countdown-number {
+          font-size: 2em;
+        }
+
         .section h2 {
-          font-size: 2.2em;
-          margin-bottom: 30px;
+          font-size: 2.5em;
         }
 
         .person h3 {
-          font-size: 1.5em;
+          font-size: 1.6em;
         }
 
         .event-item h3 {
-          font-size: 1.3em;
+          font-size: 1.4em;
+        }
+
+        .btn {
+          padding: 10px 30px;
+          font-size: 1em;
         }
       }
 
-      @media (max-width: 480px) {
-        .envelope {
-          max-width: 320px;
+      @media (max-width: 768px) {
+        .hero {
+          height: auto;
+          padding: 40px 20px;
+          background-attachment: scroll;
         }
 
-        .card-content h1 {
-          font-size: 2.2em;
-        }
-
-        .card-content h2 {
-          font-size: 1.5em;
+        .hero h1 {
+          font-size: 2em;
         }
 
         .hero-content {
-          padding: 20px 15px;
+          padding: 20px;
         }
 
         .countdown {
-          grid-template-columns: repeat(2, 1fr);
+          flex-direction: column;
           gap: 10px;
         }
 
         .countdown-item {
+          min-width: 100px;
           padding: 10px;
         }
 
-        .countdown-number {
-          font-size: 1.8em;
+        .section h2 {
+          font-size: 2em;
+          margin-bottom: 20px;
         }
 
-        .gallery img {
-          height: 250px;
+        .couple {
+          flex-direction: column;
+          gap: 20px;
         }
 
         .event-details {
-          margin: 10px;
-          padding: 20px 15px;
+          padding: 20px;
         }
 
-        .btn {
-          padding: 12px 25px;
+        .gallery {
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero h1 {
+          font-size: 1.5em;
+        }
+
+        .hero p {
           font-size: 0.9em;
         }
-      }
 
-      /* Smooth Scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
+        .countdown-number {
+          font-size: 1.5em;
+        }
 
-      /* Better Button States */
-      .welcome-button,
-      .btn {
-        -webkit-tap-highlight-color: transparent;
-        touch-action: manipulation;
-      }
+        .section h2 {
+          font-size: 1.8em;
+        }
 
-      /* Fix for iOS Safari 100vh Issue */
-      @supports (-webkit-touch-callout: none) {
-        .hero {
-          min-height: -webkit-fill-available;
+        .person {
+          padding: 15px;
+        }
+
+        .person h3 {
+          font-size: 1.4em;
+        }
+
+        .gallery img {
+          height: 200px;
         }
       }
     </style>
